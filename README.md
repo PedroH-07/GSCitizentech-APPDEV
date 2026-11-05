@@ -82,7 +82,7 @@ A aplicação processa e exibe em tempo real dois indicadores principais a parti
 ---
 
 ## 6. Vídeo Pitch (2 a 3 minutos)
-* **Link do Vídeo:** [COLE_AQUI_O_LINK_DO_SEU_VIDEO_NO_YOUTUBE]
+* **Link do Vídeo:** https://www.youtube.com/watch?v=EV6aGdnAQI4
 
 ---
 
