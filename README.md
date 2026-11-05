@@ -1,18 +1,18 @@
 # EcoDenúncia - Monitoramento e Combate ao Descarte Irregular de Lixo
 
 ## 1. Contextualização do Problema, Objetivo e ODS
-O descarte inadequado de resíduos sólidos em vias públicas, terrenos baldios e áreas de preservação traz graves consequências socioambientais, tais como a proliferação de vetores de doenças, entupimento de bueiros e alagamentos[cite: 2].
+O descarte inadequado de resíduos sólidos em vias públicas, terrenos baldios e áreas de preservação traz graves consequências socioambientais, tais como a proliferação de vetores de doenças, entupimento de bueiros e alagamentos.
 
-* **Público-alvo:** Moradores urbanos, líderes comunitários e órgãos de fiscalização/gestão pública municipal[cite: 1].
-* **Objetivo:** Oferecer uma plataforma *CitizenTech* simples e acessível que permita registrar ocorrências de descarte irregular de lixo e visualizar indicadores para orientar ações de limpeza urbana[cite: 1].
-* **ODS Relacionado:** **ODS 11 - Cidades e Comunidades Sustentáveis** (Meta 11.6: reduzir o impacto ambiental negativo per capita das cidades, prestando especial atenção à gestão de resíduos municipais)[cite: 1].
+* **Público-alvo:** Moradores urbanos, líderes comunitários e órgãos de fiscalização/gestão pública municipal.
+* **Objetivo:** Oferecer uma plataforma *CitizenTech* simples e acessível que permita registrar ocorrências de descarte irregular de lixo e visualizar indicadores para orientar ações de limpeza urbana.
+* **ODS Relacionado:** **ODS 11 - Cidades e Comunidades Sustentáveis** (Meta 11.6: reduzir o impacto ambiental negativo per capita das cidades, prestando especial atenção à gestão de resíduos municipais).
 
 ---
 
 ## 2. Tecnologias Utilizadas
-* **Frontend:** HTML5, CSS3 e JavaScript (Vanilla JS)[cite: 2].
-* **Backend:** Node.js e Express.js[cite: 1, 2].
-* **Banco de Dados:** MongoDB com Mongoose (ODM)[cite: 1, 2].
+* **Frontend:** HTML5, CSS3 e JavaScript (Vanilla JS).
+* **Backend:** Node.js e Express.js.
+* **Banco de Dados:** MongoDB com Mongoose (ODM).
 
 ---
 
@@ -69,20 +69,20 @@ citizentech-descarte-lixo/
 ---
 
 ## 5. Explicação dos Indicadores
-A aplicação processa e exibe em tempo real dois indicadores principais a partir dos registros gravados no banco de dados[cite: 2]:
+A aplicação processa e exibe em tempo real dois indicadores principais a partir dos registros gravados no banco de dados:
 
 1. **Total de Ocorrências:**
-   * **Como é processado:** Consulta no banco de dados utilizando o método `countDocuments()` do Mongoose[cite: 2].
-   * **Utilidade:** Apresenta o volume acumulado de denúncias recebidas na plataforma, servindo como métrica geral do engajamento comunitário[cite: 1, 2].
+   * **Como é processado:** Consulta no banco de dados utilizando o método `countDocuments()` do Mongoose.
+   * **Utilidade:** Apresenta o volume acumulado de denúncias recebidas na plataforma, servindo como métrica geral do engajamento comunitário.
 
 2. **Resumo por Volume:**
-   * **Como é processado:** Utiliza um pipeline de agregação do MongoDB (`aggregate`) com o operador `$group` agrupando os registros por tipo de volume (`Pequeno`, `Médio`, `Grande`) e contabilizando suas ocorrências[cite: 2].
-   * **Utilidade:** Permite identificar a gravidade dos descartes cadastrados para priorização das equipes de logística de limpeza (ex: resíduos de grande porte exigem maquinário pesado ou caçambas)[cite: 1, 2].
+   * **Como é processado:** Utiliza um pipeline de agregação do MongoDB (`aggregate`) com o operador `$group` agrupando os registros por tipo de volume (`Pequeno`, `Médio`, `Grande`) e contabilizando suas ocorrências.
+   * **Utilidade:** Permite identificar a gravidade dos descartes cadastrados para priorização das equipes de logística de limpeza (ex: resíduos de grande porte exigem maquinário pesado ou caçambas).
 
 ---
 
 ## 6. Vídeo Pitch (2 a 3 minutos)
-* **Link do Vídeo:** [COLE_AQUI_O_LINK_DO_SEU_VIDEO_NO_YOUTUBE][cite: 2]
+* **Link do Vídeo:** [COLE_AQUI_O_LINK_DO_SEU_VIDEO_NO_YOUTUBE]
 
 ---
 
