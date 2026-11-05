@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoDenúncia - Descarte Irregular de Lixo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>EcoDenúncia</h1>
+            <p>Plataforma CitizenTech para Monitoramento e Combate ao Descarte Irregular de Lixo</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Contextualização e ODS -->
+        <section class="card intro-card">
+            <h2>Sobre o Projeto</h2>
+            <p>
+                Esta aplicação permite o registro de ocorrências de descarte inadequado de resíduos sólidos. 
+                Alinhada ao <strong>ODS 11 (Cidades e Comunidades Sustentáveis)</strong> da ONU, busca promover a limpeza urbana e o engajamento comunitário.
+            </p>
+        </section>
+
+        <!-- Indicadores -->
+        <section class="indicadores-container">
+            <div class="card indicador-card">
+                <h3>Total de Ocorrências</h3>
+                <div id="indicador-total" class="indicador-numero">0</div>
+            </div>
+            <div class="card indicador-card">
+                <h3>Resumo por Volume</h3>
+                <div id="indicador-resumo" class="indicador-detalhes">
+                    <p>Carregando dados...</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulario -->
+        <section class="card">
+            <h2>Registrar Nova Denúncia</h2>
+            <div id="mensagem-status" class="mensagem hidden"></div>
+            
+            <form id="form-denuncia">
+                <div class="form-group">
+                    <label for="descricao">Descrição dos Resíduos:</label>
+                    <input type="text" id="descricao" name="descricao" placeholder="Ex: Entulho de obra, móveis velhos..." required>
+                </div>
+
+                <div class="form-group">
+                    <label for="localizacao">Localização (Rua, Bairro ou Ponto de Referência):</label>
+                    <input type="text" id="localizacao" name="localizacao" placeholder="Ex: Av. Paulista, próximo ao nº 1000" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="volume">Volume Estimado:</label>
+                    <select id="volume" name="volume" required>
+                        <option value="">Selecione uma opção</option>
+                        <option value="Pequeno">Pequeno (Sacolas / Pequenos objetos)</option>
+                        <option value="Médio">Médio (Móveis / Pouco entulho)</option>
+                        <option value="Grande">Grande (Grande quantidade de entulho / Caçamba)</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn-submit">Enviar Denúncia</button>
+            </form>
+        </section>
+
+        <!-- Listagem -->
+        <section class="card">
+            <h2>Registros Cadastrados</h2>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Data</th>
+                            <th>Localização</th>
+                            <th>Descrição</th>
+                            <th>Volume</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabela-denuncias">
+                        <tr>
+                            <td colspan="4" class="text-center">Nenhuma denúncia cadastrada até o momento.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 EcoDenúncia - Projeto CitizenTech FIAP</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "name": "citizentech-descarte-lixo",
+  "version": "1.0.0",
+  "description": "Sistema de denuncia de descarte irregular de lixo",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^8.0.0"
+  }
+}
